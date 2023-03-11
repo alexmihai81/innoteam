@@ -23,8 +23,8 @@ public class AddPartController implements Initializable, Controller {
     private Stage stage;
     private Parent scene;
     private boolean isOutsourced = true;
-    private String errorMessage = new String();
-    private int partId;
+    private String errorMessage;
+    //private int partId;
 
     private InventoryService service;
     

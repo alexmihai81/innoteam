@@ -146,12 +146,13 @@ public class AddProductController implements Initializable, Controller {
         alert.setHeaderText("Confirm Part Deletion!");
         alert.setContentText("Are you sure you want to delete part " + part.getName() + " from parts?");
         Optional<ButtonType> result = alert.showAndWait();
-
-        if (result.get() == ButtonType.OK) {
-            System.out.println("Part deleted.");
-            addParts.remove(part);
-        } else {
-            System.out.println("Canceled part deletion.");
+        if(result.isPresent()) {
+            if (result.get() == ButtonType.OK) {
+                System.out.println("Part deleted.");
+                addParts.remove(part);
+            } else {
+                System.out.println("Canceled part deletion.");
+            }
         }
     }
 
