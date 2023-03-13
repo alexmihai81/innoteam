@@ -55,6 +55,15 @@ public class Inventory {
     }
     
     /**
+     public Product lookupProduct(String searchItem) {
+     for(Product p: products) {
+     if(p.getName().contains(searchItem) || (p.getProductId()+"").equals(searchItem)) return p;
+     return null;
+     }
+     **/
+     
+    
+    /**
      * Update product at given index
      * @param index
      * @param product 

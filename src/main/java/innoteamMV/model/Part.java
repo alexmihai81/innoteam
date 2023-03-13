@@ -84,6 +84,7 @@ public abstract class Part {
      * @return 
      */
     public static String isValidPart(String name, double price, int inStock, int min, int max, String errorMessage) {
+        /**String errorMessage = "";**/
         if(name.equals("")) {
             errorMessage += "A name has not been entered. ";
         }
