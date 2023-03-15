@@ -13,6 +13,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.Region;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -212,6 +213,7 @@ public class AddProductController implements Initializable, Controller {
                 alert.setTitle("Error Adding Part!");
                 alert.setHeaderText("Error!");
                 alert.setContentText(errorMessage);
+                //alert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
                 alert.showAndWait();
             } else {
                 service.addProduct(name, Double.parseDouble(price), Integer.parseInt(inStock), Integer.parseInt(min), Integer.parseInt(max), addParts);
