@@ -85,6 +85,9 @@ public abstract class Part {
      */
     public static String isValidPart(String name, double price, int inStock, int min, int max, String errorMessage) {
         /**String errorMessage = "";**/
+        if(name.length() >= 256){
+            errorMessage += "Name too long. ";
+        }
         if(name.equals("")) {
             errorMessage += "A name has not been entered. ";
         }
