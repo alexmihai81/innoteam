@@ -93,8 +93,8 @@ public class InventoryRepository {
 		}
 		inventory.setProducts(listP);
 	}
-
-	private Product getProductFromString(String line){
+	//method changed to public instead of private for testing
+	public Product getProductFromString(String line){
 		Product product=null;
 		if (line==null|| line.equals("")) return null;
 		StringTokenizer st=new StringTokenizer(line, ",");
