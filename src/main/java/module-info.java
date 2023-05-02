@@ -11,4 +11,6 @@ module innoteamMV {
     exports innoteamMV.controller;
     opens innoteamMV.service;
     exports innoteamMV.service;
+    exports innoteamMV.repository;
+    opens innoteamMV.repository;
 }
