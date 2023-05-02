@@ -93,7 +93,7 @@ public class InventoryRepository {
 		}
 		inventory.setProducts(listP);
 	}
-	//method changed to public instead of private for testing
+	//method changed to public instead of private for testing but did jenkins see it?
 	public Product getProductFromString(String line){
 		Product product=null;
 		if (line==null|| line.equals("")) return null;
