@@ -68,7 +68,7 @@ class InventoryServiceTest {
         assertEquals("", Part.isValidPart(name, price, inStock, min, max, ""));
     }
 
-    @RepeatedTest(2)
+    @Test
     @Tag("testeInvalideECP")
     void addOutsourcePartInvalid(){
         assertEquals("Inventory level is higher than the maximum value. ", Part.isValidPart(name, price, 10, min, max, ""));
