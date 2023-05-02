@@ -9,4 +9,6 @@ module innoteamMV {
     exports innoteamMV;
     opens innoteamMV.controller to javafx.fxml;
     exports innoteamMV.controller;
+    opens innoteamMV.service;
+    exports innoteamMV.service;
 }
