@@ -3,7 +3,6 @@ module innoteamMV {
     requires javafx.fxml;
     requires javafx.controls;
 
-    opens innoteamMV.model to javafx.base;
     exports innoteamMV.model;
     opens innoteamMV to javafx.fxml;
     exports innoteamMV;
@@ -11,4 +10,5 @@ module innoteamMV {
     exports innoteamMV.controller;
     opens innoteamMV.service;
     exports innoteamMV.service;
+    opens innoteamMV.model;
 }
